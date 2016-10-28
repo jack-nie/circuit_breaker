@@ -1,5 +1,7 @@
 # CircuitBreaker
 
+[![Build Status](https://travis-ci.org/jack-nie/circuit_breaker.svg?branch=master)](https://travis-ci.org/jack-nie/circuit_breaker)
+
 This is a gem implemented circuit breaker pattern, inspired by Martin Fowler[ circuit breaker ]( https://github.com/jack-nie/circuit_breaker.git )
 
 ## Installation
