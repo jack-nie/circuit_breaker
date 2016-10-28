@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'logger'
 
 describe CircuitBreaker do
   $LOGGER = Logger.new(STDOUT)
@@ -14,7 +13,6 @@ describe CircuitBreaker do
     @t = TestClass.new
     @cb = CircuitBreaker::CircuitHandler.new { |args| @t.do_something args }
   end
-
 
   it 'has a version number' do
     expect(CircuitBreaker::VERSION).not_to be nil
@@ -32,6 +30,5 @@ describe CircuitBreaker do
       expect(@cb.call(5)).to equal(5)
       expect(@cb.state).to equal(:closed)
     end
-
   end
 end
