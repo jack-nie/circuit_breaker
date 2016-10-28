@@ -1,6 +1,6 @@
 # CircuitBreaker
 
-This is a gem implemented circuit breaker pattern, inspired by Martin Fowler[ circuit breaker ][https://github.com/jack-nie/circuit_breaker.git]
+This is a gem implemented circuit breaker pattern, inspired by Martin Fowler[ circuit breaker ]( https://github.com/jack-nie/circuit_breaker.git )
 
 ## Installation
 
@@ -20,12 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-    ```
     require 'circuit_breaker'
 
     cb = CircuitBreaker::CircuitHandler.new { |args| @t.do_something args }
     cb.call(args)
-    ```
 
 ## Development
 
